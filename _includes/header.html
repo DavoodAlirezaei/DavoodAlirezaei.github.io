@@ -1,0 +1,23 @@
+<header>
+  
+    <div class="masthead clearfix">
+      <div class="inner">
+        <h3 class="masthead-brand"><b>Davood Alirezaei</b></h3>
+        <nav>
+          <ul class="nav masthead-nav">
+            <li><a {% if page.body_class == 'home' %} class="active"{% endif %} onclick="document.location.href='/';" href="#">Portfolio</a></li>
+            <li><a {% if page.body_class == 'about' %} class="active"{% endif %} href="{{ site.url }}/about/">About</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    {% if page.body_class == "home" %}
+      
+    {% endif %}
+    
+</header>
